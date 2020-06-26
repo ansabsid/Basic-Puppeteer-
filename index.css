@@ -1,0 +1,148 @@
+.header{
+
+/*background-image: url(gradient.jpg);*/
+background-image: url(gradient.jpg);
+height: 100vh;
+ background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align:center;
+	
+	
+}
+.navbar .navbar-nav .nav-item .nav-link{
+	color:#fff;
+}
+.section{
+background-color: #e5e5ec;
+height:100vh;
+background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.heyyou{
+	text-align: center;
+	margin-top: 100px;
+	color: white;
+	
+	font-family: tahoma;
+	font-size: 36px;
+	font-weight: 400;
+	overflow:hidden;
+	animation: bg 5s linear infinite;
+}
+body{
+	
+	
+
+}
+.dropping-texts{
+	display: inline-block;
+	width:80px;
+	text-align: left;
+	height:43px;
+	vertical-align: -2px;
+}
+.dropping-texts > div{
+
+font-size: 0px;
+opacity:0;
+margin-left: -30px;
+position: absolute;
+font-weight: 300;
+box-shadow: 0px 60px 25px -20px rgba(0,0,0,0.5);
+}
+.dropping-texts > div:nth-child(1){
+	animation: roll 5s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2){
+	animation: roll 5s linear infinite  1s;
+}
+.dropping-texts > div:nth-child(3){
+	animation: roll 5s linear infinite 2s;
+}
+.dropping-texts > div:nth-child(4){
+	animation: roll 5s linear infinite 3s;
+}
+@keyframes roll{
+	0%{
+		font-size:0px;
+		opacity: 0;
+		margin-left: -30px;
+		margin-top: 0px;
+		transform: rotate(-25deg);
+
+	}
+	3%{
+		opacity:1;
+		transform: rotate(0deg);
+
+	}
+	5%{
+		opacity:1;
+		font-size: inherit;
+		margin-left: 0px;
+		margin-top: 0px;
+		
+	}
+	20%{
+		opacity:1;
+		font-size: inherit;
+		margin-left: 0px;
+		margin-top: 0px;
+		transform: rotate(0deg)
+	}
+	27%{
+		opacity:0.5;
+		font-size: 0px;
+		margin-left: 20px;
+		margin-top: 100px;
+		
+	}
+	100%{
+		opacity:0;
+		font-size: 0px;
+		margin-left: -30px;
+		margin-top: 0px;
+		transform: rotate(15deg)
+		
+	}
+
+}
+/*@keyframes bg{
+	0%{
+		background: none;
+	}
+	3%{
+		background: #0094ff;
+	}
+	20%{
+		background: #0094ff;
+	}
+	23%{
+		background: #b200ff;
+	}
+	40%{
+		background: #b200ff;
+	} 
+	43%{
+		background: #8bc34a;
+	}
+	60%{
+		background: #8bc34a;
+	}
+	63%{
+		background:none ;
+	}
+	80%{
+		background: none ;
+	}
+	83%{
+		background: none;
+	}
+	100%{
+		background:none ;
+	}
+
+}*/
