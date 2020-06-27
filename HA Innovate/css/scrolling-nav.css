@@ -1,0 +1,110 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/templates/scrolling-nav)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+
+header {
+  padding: 156px 0 100px;
+}
+
+section {
+  padding: 150px 0;
+}
+
+.bg-dark{
+	transition: 500ms ease;
+	background: transparent !important;
+}
+.bg-dark.scrolled{
+	    background: rgba(255, 255, 255, 0.98) !important;
+	
+}
+
+.nav-color.ncol{
+	color:black !important;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ .dropping-texts{
+    display: inline-block;
+    width:80px;
+    text-align: left;
+    height:38px;
+    padding-left: 5px;
+    vertical-align: 0px;
+}
+.dropping-texts > div{
+
+font-size: 50px;
+opacity:0;
+margin-left: 100px;
+position: absolute;
+font-weight: 300;
+box-shadow: 0px 60px 25px -20px rgba(0,0,0,0.1);
+}
+.dropping-texts > div:nth-child(1){
+    animation: roll 5s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2){
+    animation: roll 5s linear infinite  1s;
+}
+.dropping-texts > div:nth-child(3){
+    animation: roll 5s linear infinite 2s;
+}
+.dropping-texts > div:nth-child(4){
+    animation: roll 5s linear infinite 3s;
+}
+@keyframes roll{
+    0%{
+        font-size:0px;
+        opacity: 0;
+        margin-left: -30px;
+        margin-top: 0px;
+        transform: rotate(-25deg);
+
+    }
+    3%{
+        opacity:1;
+        transform: rotate(0deg);
+
+    }
+    5%{
+        opacity:1;
+        font-size: inherit;
+        margin-left: 0px;
+        margin-top: 0px;
+        
+    }
+    20%{
+        opacity:1;
+        font-size: inherit;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform: rotate(0deg)
+    }
+    27%{
+        opacity:0.5;
+        font-size: 0px;
+        margin-left: 20px;
+        margin-top: 100px;
+        
+    }
+    100%{
+        opacity:0;
+        font-size: 0px;
+        margin-left: -30px;
+        margin-top: 0px;
+        transform: rotate(15deg)
+        
+    }
+
+}
